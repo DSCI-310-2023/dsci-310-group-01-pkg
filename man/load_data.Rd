@@ -15,6 +15,3 @@ a data frame with the data from the given URL
 \description{
 loads the data from the Internet and returns a data frame
 }
-\examples{
-load_data("https://examplefile.csv")
-}

@@ -26,5 +26,5 @@ A ggplot boxplot
 A function for creating a side by side boxplot
 }
 \examples{
-create_boxplot(mtcars, mpg, gears, "mpg", "Number of Gears", "MPG by Number of Gears")
+create_boxplot(mtcars, mtcars$cyl, mtcars$cyl, "MPG by No. Cylinders", "mpg", "No. Cylinders")
 }
