@@ -15,7 +15,7 @@
 #' @export
 #'
 #' @examples
-#' create_boxplot(mtcars, mpg, gears, "mpg", "Number of Gears", "MPG by Number of Gears")
+#' create_boxplot(mtcars, mtcars$cyl, mtcars$cyl, "MPG by No. Cylinders", "mpg", "No. Cylinders")
 
 create_boxplot <- function(data, x_var, y_var, title, x_title, y_title) {
   if (!is.data.frame(data)) {

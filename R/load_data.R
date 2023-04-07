@@ -8,10 +8,6 @@
 #' @return a data frame with the data from the given URL
 #'
 #' @export
-#'
-#' @examples
-#' load_data("https://examplefile.csv")
-
 
 load_data <- function(url) {
 
