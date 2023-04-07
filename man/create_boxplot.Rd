@@ -26,5 +26,5 @@ A ggplot boxplot
 A function for creating a side by side boxplot
 }
 \examples{
-create_boxplot(garment_data, day, actual_productivity, "Actual Productivity by Day of the Week", "Weekend/Weekday", "Actual Productivity")
+create_boxplot(mtcars, mpg, gears, "mpg", "Number of Gears", "MPG by Number of Gears")
 }

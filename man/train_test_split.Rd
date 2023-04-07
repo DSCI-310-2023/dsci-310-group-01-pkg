@@ -4,14 +4,14 @@
 \alias{train_test_split}
 \title{Splitting test data into testing and training data}
 \usage{
-train_test_split(df, train_percent, col_name)
+train_test_split(data_frame, train_percent, col_name)
 }
 \arguments{
+\item{data_frame}{A data frame or data frame extension (e.g. a tibble).}
+
 \item{train_percent}{The percent of the parent dataframe to be train-test split}
 
 \item{col_name}{The column name to group by in the testing dataframe}
-
-\item{data_frame}{A data frame or data frame extension (e.g. a tibble).}
 }
 \value{
 A list with two data frames
@@ -23,5 +23,5 @@ Creates two data frames, one for testing and one for training,
 from the parent data frame
 }
 \examples{
-train_test_split(garment_Data, 0.75, "ID")
+train_test_split(mtcars, 0.75, "mpg")
 }

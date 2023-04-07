@@ -18,5 +18,5 @@ A new data frame from the old data frame with selected columns dropped
 From a given data frame drops selected columns and creates a new data frame
 }
 \examples{
-clean_data(garments_data, c("data","team"))
+clean_data(mtcars, c("mpg","cyl"))
 }
