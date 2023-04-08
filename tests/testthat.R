@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(projectPackage)
+library(grp1ProjectPackage)
 
-test_check("projectPackage")
+test_check("grp1ProjectPackage")
