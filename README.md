@@ -15,7 +15,7 @@ You can install the development version of projectPackage from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("jw327/dsci-310-group-07-pkg")
+devtools::install_github("jw327/dsci-310-group-01-pkg")
 ```
 
 ## Example
@@ -23,7 +23,7 @@ devtools::install_github("jw327/dsci-310-group-07-pkg")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(projectPackage)
+library(grp1ProjectPackage)
 ## basic example code
 ```
 
