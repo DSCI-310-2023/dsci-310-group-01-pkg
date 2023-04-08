@@ -1,0 +1,92 @@
+---
+title: "grp1_project_package-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{project_package-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, message = FALSE, echo = FALSE, error = FALSE}
+library(grp1ProjectPackage)
+```
+
+# Introduction to grp1ProjectPackage
+
+The goal of grp1ProjectPackage is to provide simplified functions to achieve the goal of data preprocessing for exploratory data analyses. The grp1ProjectPackage makes the following steps quick and easy:
+
+-   Loading data from an html
+-   Removing certain columns from a data set
+-   Creating a ggplot boxplot
+-   Splitting data into training and testing sets
+
+This document introduces you all of the tools mentioned above as well as examples of how to apply them to data frames and use them in different real-world scenarios.
+
+## 1. Load data from an html using `load_data()`
+Desciption ... TODO 
+```{r load_data, warning = FALSE, error = FALSE, echo = FALSE}
+init_data<-load_data("https://7e6cd356-86ad-4874-abc7-3a69bbbc39e6.filesusr.com/ugd/c5a545_c1b17c070c984dfcb14cf1c3bb0b6e67.csv?dn=garments_worker_productivity.csv")
+head(init_data)
+```
+
+## Data: `mtcars`
+
+For the purpose of demonstration for the rest of the package, we will use a basic data set called `mtcars`. This data set has 11 columns, 32 rows and is documented in `?mtcars`. Note that `mtcars` is a data frame and below is the first 6 rows.
+
+```{r dataset, warning=FALSE, echo = FALSE}
+head(mtcars)
+data <- mtcars
+```
+
+
+# Demonstration of basic functions in projectPackage
+
+## 2. Dropping columns with `clean_data()`
+
+Often when you work with large data sets, there will be columns that are redundant or not of interest. In that case, you can use our function `clean_data()` to drop those columns. For details on how to use the function, check out `help(clean_data)`.
+
+-   **dropping a single column `mpg` from mtcars**
+
+```{r data_cleaning1, warning = FALSE, error = FALSE}
+head(clean_data(data, "mpg"))
+```
+
+As you can see above, the column mpg has been dropped from the data frame.
+
+-   **dropping multiple columns from mtcars**
+
+```{r data_cleaning2, warning = FALSE, error = FALSE}
+head(clean_data(data, c("mpg","disp","qsec")))
+```
+
+Again, columns `mpg`, `disp`, and `qsec` have been dropped.
+
+-   **When an inappropriate column name is inputted, an error will occur.**
+
+For instance, if I accidentally used the wrong column name mpf instead of `mpg`. The function will kindly produce an error.
+
+`clean_data(data, "mpf")` will produce the following message: *"Error in clean_data(data, "mpf") : column names incorrect. Please try again"*
+
+
+## 3. Creating a boxplot using `create_boxplot()`
+
+Often times visualizations are needed to better understand the raw/modified data. Data visualization helps in the breakdown of complex problems by transforming data into a more understandable format and showing trends and outliers. A good visualization tells a story by reducing noise from data and emphasizing the most important facts. 
+
+For details on how to use the function, check out `help(create_boxplot)`.
+
+```{r plot, warning = FALSE, echo = FALSE,  fig.width = 7, fig.height = 4}
+create_boxplot(mtcars, as.factor(data$cyl), mtcars$mpg, "MPG by No. Cylinders", "No. Cylinders", "mpg")
+```
+
+## 4. Splitting data into training and testing sets using `train_test_split()`
+Desciption ... TODO 
+```{r recipe-scale-center, warning = FALSE, error = FALSE}
+ train_test_split(mtcars, 0.75, "mpg")
+```
