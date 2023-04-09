@@ -10,7 +10,7 @@
 
 The goal of grp1ProjectPackage is to provide user a package for
 simplifying data pre-processing and doing basic exploratory data
-analyses. It includes functions for Loading data from an html, removing
+analyses. It includes functions for loading data from an html, removing
 certain columns from a data set, creating boxplots, and splitting data
 into training and testing sets.
 
@@ -98,7 +98,7 @@ frame.
 create_boxplot(mtcars, as.factor(mtcars$cyl), mtcars$mpg, "MPG by No. Cylinders", "No. Cylinders", "mpg")
 ```
 
-<img src="man/figures/README-plot-1.png" width="100%" />
+<img src="man/figures/README-plot-1.png" width="80%" />
 
 4.  Splitting data into training and testing sets using
     `train_test_split()`
@@ -143,7 +143,7 @@ create_boxplot(mtcars, as.factor(mtcars$cyl), mtcars$mpg, "MPG by No. Cylinders"
 
 ## Contributing
 
-We appreciate contributions to the `ln.knn.regression` package. Please
+We appreciate contributions to the `grp1ProjectPackage` package. Please
 refer to our [Contributing
 document](https://github.com/jw327/dsci-310-group-01-pkg/blob/main/CONTRIBUTING.md)
 and [Code of
