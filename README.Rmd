@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 ![](https://github.com/jw327/dsci-310-group-01-pkg/actions/workflows/test_coverage.yaml/badge.svg)
 <!-- badges: end -->
 
-The goal of grp1ProjectPackage is to provide user a package for simplifying data pre-processing and doing basic exploratory data analyses. It includes functions for Loading data from an html, removing certain columns from a data set, creating boxplots, and splitting data into training and testing sets.
+The goal of grp1ProjectPackage is to provide user a package for simplifying data pre-processing and doing basic exploratory data analyses. It includes functions for loading data from an html, removing certain columns from a data set, creating boxplots, and splitting data into training and testing sets.
 
 ## Installation
 
@@ -82,7 +82,7 @@ create_boxplot(mtcars, as.factor(mtcars$cyl), mtcars$mpg, "MPG by No. Cylinders"
 
 ## Contributing
 
-We appreciate contributions to the `ln.knn.regression` package. Please refer to our [Contributing document](https://github.com/jw327/dsci-310-group-01-pkg/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/jw327/dsci-310-group-01-pkg/blob/main/CODE_OF_CONDUCT.md) for more information.
+We appreciate contributions to the `grp1ProjectPackage` package. Please refer to our [Contributing document](https://github.com/jw327/dsci-310-group-01-pkg/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/jw327/dsci-310-group-01-pkg/blob/main/CODE_OF_CONDUCT.md) for more information.
 
 ## License
 
