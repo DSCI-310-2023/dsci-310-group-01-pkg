@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 ![](https://github.com/jw327/dsci-310-group-01-pkg/actions/workflows/test_coverage.yaml/badge.svg)
+[![Codecov test coverage](https://codecov.io/gh/jw327/dsci-310-group-01-pkg/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jw327/dsci-310-group-01-pkg?branch=main)
 <!-- badges: end -->
 
 The goal of grp1ProjectPackage is to provide user a package for simplifying data pre-processing and doing basic exploratory data analyses. It includes functions for loading data from an html, removing certain columns from a data set, creating boxplots, and splitting data into training and testing sets.
@@ -45,7 +46,7 @@ library(grp1ProjectPackage)
 ## basic example code
 ```
 
-1. Load data from an html using `load_data()`
+1. Load data from a URL using `load_data()`
 
 ```{r load_data, echo=TRUE, error=FALSE, message=FALSE, warning=FALSE}
 data<-load_data("https://7e6cd356-86ad-4874-abc7-3a69bbbc39e6.filesusr.com/ugd/c5a545_c1b17c070c984dfcb14cf1c3bb0b6e67.csv?dn=garments_worker_productivity.csv")
