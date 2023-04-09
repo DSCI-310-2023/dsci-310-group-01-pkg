@@ -23,6 +23,9 @@ jobs:
     steps:
       - name: Checkout files from GitHub version control repository
         uses: actions/checkout@v2
+              
+      - name: Setup pandoc
+        uses: r-lib/actions/setup-pandoc@v2
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
