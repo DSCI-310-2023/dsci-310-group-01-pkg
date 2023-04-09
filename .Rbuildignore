@@ -7,3 +7,6 @@
 ^CONTRIBUTING.md$
 ^MEMBERS$
 ^codecov\.yml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
