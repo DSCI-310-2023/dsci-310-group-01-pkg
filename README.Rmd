@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 # grp1ProjectPackage
 
 <!-- badges: start -->
-![](https://github.com/DSCI-310/dsci-310-group-01-pkg/actions/workflows/test_coverage.yaml/badge.svg)
+![](https://github.com/DSCI-310/dsci-310-group-01-pkg/actions/workflows/test-coverage.yaml/badge.svg)
 [![Codecov test coverage](https://codecov.io/gh/DSCI-310/dsci-310-group-01-pkg/branch/main/graph/badge.svg)](https://app.codecov.io/gh/DSCI-310/dsci-310-group-01-pkg?branch=main)
 <!-- badges: end -->
 
