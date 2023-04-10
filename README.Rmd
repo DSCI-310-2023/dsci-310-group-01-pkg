@@ -16,8 +16,8 @@ knitr::opts_chunk$set(
 # grp1ProjectPackage
 
 <!-- badges: start -->
-![](https://github.com/jw327/dsci-310-group-01-pkg/actions/workflows/test_coverage.yaml/badge.svg)
-[![Codecov test coverage](https://codecov.io/gh/jw327/dsci-310-group-01-pkg/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jw327/dsci-310-group-01-pkg?branch=main)
+![](https://github.com/DSCI-310/dsci-310-group-01-pkg/actions/workflows/test_coverage.yaml/badge.svg)
+[![Codecov test coverage](https://codecov.io/gh/DSCI-310/dsci-310-group-01-pkg/branch/main/graph/badge.svg)](https://app.codecov.io/gh/DSCI-310/dsci-310-group-01-pkg?branch=main)
 <!-- badges: end -->
 
 The goal of grp1ProjectPackage is to provide user a package for simplifying data pre-processing and doing basic exploratory data analyses. It includes functions for loading data from an html, removing certain columns from a data set, creating boxplots, and splitting data into training and testing sets.
@@ -28,7 +28,7 @@ You can install the development version of grp1ProjectPackage from [GitHub](http
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("jw327/dsci-310-group-01-pkg")
+devtools::install_github("DSCI-310/dsci-310-group-01-pkg")
 ```
 
 ### Functions Included:
