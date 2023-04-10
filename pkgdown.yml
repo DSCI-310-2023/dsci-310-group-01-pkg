@@ -1,0 +1,10 @@
+pandoc: 2.19.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  grp1_project_package-vignette: grp1_project_package-vignette.html
+last_built: 2023-04-10T03:33Z
+urls:
+  reference: https://jw327.github.io/dsci-310-group-01-pkg/reference
+  article: https://jw327.github.io/dsci-310-group-01-pkg/articles
+
