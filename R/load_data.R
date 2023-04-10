@@ -1,7 +1,7 @@
 #' loads the data from the Internet and returns a data frame
 #'
-#'@importFrom readr read_csv
-#'@importFrom utils download.file
+#' @importFrom readr read_csv
+#' @importFrom utils download.file
 #'
 #' @param url the path to the input file (a string of a URL)
 #'
