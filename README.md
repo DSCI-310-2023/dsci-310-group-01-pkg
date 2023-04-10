@@ -23,7 +23,7 @@ You can install the development version of grp1ProjectPackage from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("jw327/dsci-310-group-01-pkg")
+devtools::install_github("DSCI-310/dsci-310-group-01-pkg")
 ```
 
 ### Functions Included:
@@ -148,9 +148,9 @@ create_boxplot(mtcars, as.factor(mtcars$cyl), mtcars$mpg, "MPG by No. Cylinders"
 
 We appreciate contributions to the `grp1ProjectPackage` package. Please
 refer to our [Contributing
-document](https://github.com/jw327/dsci-310-group-01-pkg/blob/main/CONTRIBUTING.md)
+document](https://github.com/DSCI-310/dsci-310-group-01-pkg/blob/main/CONTRIBUTING.md)
 and [Code of
-Conduct](https://github.com/jw327/dsci-310-group-01-pkg/blob/main/CODE_OF_CONDUCT.md)
+Conduct](https://github.com/DSCI-310/dsci-310-group-01-pkg/blob/main/CODE_OF_CONDUCT.md)
 for more information.
 
 ## License
