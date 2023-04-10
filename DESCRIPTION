@@ -1,6 +1,6 @@
 Package: grp1ProjectPackage
 Title: Data Loading, Cleaning, and Preprocessing
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: c(
     person("Justin", "Wong", , "jwong258@student.ubc.ca", role = c("aut", "cre")),
     person("Longfei", "Guan", ,"kimguanlongfei@gmail.com",  role = "aut"),
