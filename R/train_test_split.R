@@ -15,6 +15,7 @@
 #'
 #' @examples
 #' train_test_split(mtcars, 0.75, "mpg")
+
 train_test_split <- function(data_frame, train_percent, col_name) {
   if (!is.data.frame(data_frame)) {
     stop("data must be a data frame. Please try again.")
